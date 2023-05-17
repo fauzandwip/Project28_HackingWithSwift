@@ -17,9 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guT-d2-qgw">
-                                <rect key="frame" x="136.33333333333334" y="408.66666666666669" width="120.66666666666666" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Authenticate"/>
+                                <rect key="frame" x="121.66666666666669" y="404" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.1512280466" green="0.361315204" blue="0.40735015600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HJe-Ge-BmG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="dzu-ke-tvu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Authenticate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="authenticateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5e-jG-N0i"/>
                                 </connections>
@@ -35,16 +44,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a1p-As-9CX" secondAttribute="bottom" id="QA9-k7-Mfj"/>
-                            <constraint firstItem="a1p-As-9CX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qfx-k4-lGc"/>
-                            <constraint firstItem="guT-d2-qgw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SG7-18-dPf"/>
-                            <constraint firstItem="a1p-As-9CX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f0A-8Q-EUg"/>
-                            <constraint firstItem="a1p-As-9CX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mkq-NL-i65"/>
-                            <constraint firstItem="guT-d2-qgw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sEY-hj-fWU"/>
+                            <constraint firstItem="guT-d2-qgw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1oM-YO-7QV"/>
+                            <constraint firstItem="a1p-As-9CX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A3V-Ch-prZ"/>
+                            <constraint firstItem="a1p-As-9CX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Avo-IT-NPf"/>
+                            <constraint firstItem="a1p-As-9CX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O8D-fJ-YuE"/>
+                            <constraint firstItem="a1p-As-9CX" firstAttribute="centerX" secondItem="guT-d2-qgw" secondAttribute="centerX" id="TpN-Z4-Spu"/>
+                            <constraint firstItem="a1p-As-9CX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ti2-aX-bn4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mu1-h9-lO8"/>
                     <connections>
+                        <outlet property="authenticateButton" destination="guT-d2-qgw" id="BSw-jE-2KD"/>
                         <outlet property="secret" destination="a1p-As-9CX" id="kzG-V0-z4x"/>
                     </connections>
                 </viewController>
