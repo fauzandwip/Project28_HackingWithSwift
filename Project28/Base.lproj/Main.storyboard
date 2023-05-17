@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Authenticate"/>
                                 <connections>
-                                    <action selector="authenticateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOt-31-GNG"/>
+                                    <action selector="authenticateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5e-jG-N0i"/>
                                 </connections>
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a1p-As-9CX">
